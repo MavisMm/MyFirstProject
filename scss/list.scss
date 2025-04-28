@@ -38,3 +38,15 @@ $form-check-input-border-radius: 0;
   .record-empty-row{
     display: none;
   }
+
+  body {
+ 
+    counter-reset: row-count;
+  }
+
+ .row-num::before {
+  
+    counter-increment: row-count;
+    content: counter(row-count) ;
+  } 
+  

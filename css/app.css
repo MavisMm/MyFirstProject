@@ -11870,4 +11870,13 @@ textarea.form-control-lg {
   display: none;
 }
 
+body {
+  counter-reset: row-count;
+}
+
+.row-num::before {
+  counter-increment: row-count;
+  content: counter(row-count);
+}
+
 /*# sourceMappingURL=app.css.map */
